@@ -1,0 +1,23 @@
+ul.nav.nav-pills {
+  background-color: rgb(230, 230, 230);
+}
+
+a.nav-link {
+  color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  border-bottom: 1px solid #0d6efd;
+  border-radius: 0;
+  color: black;
+  background-color: transparent;
+}
+button {
+  background: #0d6efd;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px black;
+  width: 50px;
+}
