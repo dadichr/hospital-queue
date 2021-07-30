@@ -60,105 +60,30 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">Created<br>Time</th>
-              <th scope="col">Site</th>
-              <th scope="col">Order</th>
-              <th scope="col">Product ID</th>
-              <th scope="col">Name</th>
-              <th scope="col">Description</th>
-              <th scope="col">Price</th>
+              <th scope="col">ID</th>
+              <th scope="col">FULLNAME</th>
+              <th scope="col">DOB</th>
+              <th scope="col">Gender</th>
+              <th scope="col">BPJS_NO</th>
+              <th scope="col">ADDRESS</th>
+              <th scope="col">ADDRESS2</th>
+              <th scope="col">PHONE</th>
+              <th scope="col">REGION</th>
+              <th scope="col">PROVINCE</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody *ngFor="let data of visitorList; let i = index">
             <tr>
-              <th scope="row">1</th>
-              <td>Gudang</td>
-              <td></td>
-              <td>PRODUK-PL0071-S-ABU TUA</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Gudang</td>
-              <td></td>
-              <td>PRODUK-PL0071-S-ABU TUA</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Gudang</td>
-              <td></td>
-              <td>PRODUK-PL0071-S-ABU TUA</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Gudang</td>
-              <td></td>
-              <td>PRODUK-PL0071-S-ABU TUA</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Gudang</td>
-              <td></td>
-              <td>PRODUK-PL0071-S-ABU TUA</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Gudang</td>
-              <td></td>
-              <td>PRODUK-PL0071-S-ABU TUA</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Gudang</td>
-              <td></td>
-              <td>PRODUK-PL0071-S-ABU TUA</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Gudang</td>
-              <td></td>
-              <td>PRODUK-PL0071-S-ABU TUA</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Gudang</td>
-              <td></td>
-              <td>PRODUK-PL0071-S-ABU TUA</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Gudang</td>
-              <td></td>
-              <td>PRODUK-PL0071-S-ABU TUA</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td>SWEATER OBLONG JEMPER NASA UNISEX matt COTTON fleece Premium TERMURAH TERLARIS</td>
-              <td></td>
+              <th scope="row">{{i+1}}</th>
+              <td>{{data.fullname}}</td>
+              <td>{{data.dob}}</td>
+              <td>{{data.gender}}</td>
+              <td>{{data.bpjs_no}}</td>
+              <td>{{data.address}}</td>
+              <td>{{data.address2}}</td>
+              <td>{{data.phone}}</td>
+              <td>{{data.region}}</td>
+              <td>{{data.province}}</td>
             </tr>
           </tbody>
         </table>
